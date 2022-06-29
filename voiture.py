@@ -18,16 +18,21 @@ class Personnages:
         self.hp = self.hp - life
         if self.hp <= 0:
             print('You are dead')
+        else:
+            print('You are: ' + str(self.hp) + 'HP')
         
 Leo = Personnages(100)
-print(Leo.hp)
+print(str(Leo.hp) + ' Leo HP')
 Leo.gettingHit(8)
 Leo.gettingHit(3)
-Leo.gettingHit(75)
-print(Leo.hp)
-Seb = Personnages(20)
-print(Seb.hp)
+Leo.gettingHit(24)
+print('End ' + str(Leo.hp) + ' Leo HP')
+
+
+
+Seb = Personnages(100)
+print(str(Seb.hp) + ' Seb HP')
 Seb.gettingHit(8)
 Seb.gettingHit(2)
-Seb.gettingHit(10)
-print(Seb.hp)
+Seb.gettingHit(65)
+print('End ' + str(Seb.hp) + ' Seb HP')

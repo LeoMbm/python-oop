@@ -37,14 +37,21 @@ class Tournevis:
 tool = Marteau('green')
 new = Marteau('lol')
 screw = Tournevis('Brown')
-toolBox = Tools('Color') 
+toolBox = Tools('marteau') 
 
 print(new.paint('yellow'))
 print(tool.color)
 tool.color = "No color"
 print(toolBox.addTools('visseuse'))
-print(tool.color)
+print(toolBox.addTools('perceuse'))
+print(toolBox.addTools('laser'))
+print(toolBox.addTools('brioche'))
 
+
+
+
+print(tool.color)
+print(toolBox.tools)
 
 
 # print(toolBox.addTools('yes'))
